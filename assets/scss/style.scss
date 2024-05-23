@@ -1,0 +1,168 @@
+@import 'variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.cards{
+    margin: 25vh auto;
+    max-width: 40rem;
+    box-shadow: 5px 5px 23px 5px rgba(0,0,0,0.21);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Hanken Grotesk';
+    border-radius: 20px;
+}
+
+@media (max-width: 650px){
+    .cards{
+        margin: auto;
+        box-shadow: 5px 5px 23px 5px rgba(0,0,0,0.21);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        font-family: 'Hanken Grotesk';
+        border-radius: 20px;
+    }
+
+    .leftCard{
+        border-radius: 0 0 20px 20px !important;
+    }
+}
+
+.leftCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(10deg, $gradientRoyal 0%, $gradientSlate 100%);
+    border-radius: 20px;
+}
+
+.leftCard .title p{
+    font-size: x-large;
+    color: $neutralLight;
+}
+
+.leftCard .result{
+    border-radius: 50%;
+    padding: 2rem 3rem;
+    background: linear-gradient(0deg, $gradientPersian 0%, $gradientViolet 100%);
+}
+
+.leftCard .result .score p{
+    margin: 0;
+    font-size: 3rem;
+    color: white;
+}
+
+.leftCard .result .of p{
+    margin: 0;
+    color: $neutralLight;
+}
+
+.leftCard .descritpionResult .titleDesctipitonResult p{
+    font-size: x-large;
+    color: white;
+}
+
+.leftCard .descritpionResult .paragraphDesctipitonResultt p{
+    color: $neutralLight;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 14rem;
+}
+
+.rightCard{
+    margin: 1rem 2rem;
+}
+
+.rightCard .title{
+    text-align: start;
+    font-size: x-large;
+}
+
+.rightCard .title p{
+    margin: 20px 0;
+}
+
+.rightCard .allResults{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.rightCard .allResults .result{
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightCard .allResults .result .resultNumber span{
+    color: $neutralLight;
+}
+
+.rightCard .allResults .reaction{
+
+    background-color: $primaryRedT;
+    border-radius: 10px;
+}
+
+.rightCard .allResults .memory{
+
+    background-color: $primaryOrangeyT;
+    border-radius: 10px;
+}
+
+.rightCard .allResults .verbal{
+
+    background-color: $primaryGreenT;
+    border-radius: 10px;
+}
+
+.rightCard .allResults .visual{
+    background-color: $primaryCobaltT;
+    border-radius: 10px;
+}
+
+.rightCard .allResults .name p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.rightCard .allResults .reaction .name{
+    color: $primaryRed;
+}
+
+.rightCard .allResults .memory .name{
+    color: $primaryOrangey;
+}
+
+.rightCard .allResults .verbal .name{
+    color: $primaryGreen;
+}
+
+.rightCard .allResults .visual .name{
+    color: $primaryCobalt;
+}
+
+.rightCard .button input{
+    margin: 2rem 0;
+    padding: 10px 0;
+    border-radius: 2rem;
+    border: none;
+    background-color: $neutralDark;
+    color: white;
+    font-size: large;
+    width: 100%;
+    text-align: center;
+
+}
+
+
